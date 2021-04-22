@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
+
+
+body{
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#close-nav {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .navbar .container {
+        border: none !important;
+    }
+    .navbar .nav-item {
+        border: none !important;
+    }
+    .logo-content .text-center {
+        text-align: left !important;
+    }
+    .navbar .navbar-nav {
+        position: fixed;
+        height: 200vh;
+        z-index: 20;
+        right: 0;
+        top: 0;
+        background: black;
+        width: 80%;
+        padding: 100px 8% 0 8%;
+        color: white;
+    }
+    .navbar .navbar-toggler {
+        position: absolute;
+        right: 55px;
+        top: -120px;
+    }
+    #close-nav {
+        width: 24px;
+        position: absolute;
+        top: 50px;
+        right: 10%;
+    }
+}
